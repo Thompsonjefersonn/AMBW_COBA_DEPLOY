@@ -12,13 +12,14 @@ self.addEventListener("fetch", e => {
 
 const CACHE_NAME = "pwa-v1";
 const urlsToCache = [
-  "/",            // pastikan sesuai path di GitHub Pages
-  "/index.html",
-  "/style.css",
-  "/script.js",
-  "/manifest.json",
-  "/icon.png"     // ganti sesuai nama icon kamu
+  "/AMBW_COBA_DEPLOY/",             // base path
+  "/AMBW_COBA_DEPLOY/index.html",
+  "/AMBW_COBA_DEPLOY/style.css",
+  "/AMBW_COBA_DEPLOY/script.js",
+  "/AMBW_COBA_DEPLOY/manifest.json",
+  "/AMBW_COBA_DEPLOY/icon.png"      // ganti sesuai nama icon kamu
 ];
+
 
 self.addEventListener("install", e => {
   console.log("Service Worker installed");
