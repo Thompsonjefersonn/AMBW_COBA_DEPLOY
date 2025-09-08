@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My GitHub Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA Test</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>Website dari VS Code.</p>
+  <h1>Hello PWA!</h1>
+  <p>This is a simple PWA deployed on GitHub Pages.</p>
+
+  <script>
+    // Register Service Worker
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js")
+        .then(() => console.log("Service Worker registered"))
+        .catch(err => console.error("SW registration failed:", err));
+    }
+  </script>
 </body>
 </html>
