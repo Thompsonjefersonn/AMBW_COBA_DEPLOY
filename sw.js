@@ -12,11 +12,12 @@ self.addEventListener("fetch", e => {
 
 const CACHE_NAME = "pwa-v1";
 const urlsToCache = [
-  "/AMBW_COBA_DEPLOY/",             
+  "/AMBW_COBA_DEPLOY/",        // root
   "/AMBW_COBA_DEPLOY/index.html",
-  "/AMBW_COBA_DEPLOY/script.js",
   "/AMBW_COBA_DEPLOY/manifest.json",
-  "/AMBW_COBA_DEPLOY/icon.png"     
+  "/AMBW_COBA_DEPLOY/icon-192.png",
+  "/AMBW_COBA_DEPLOY/icon-512.png",
+  "/AMBW_COBA_DEPLOY/sw.js"    // bisa ditambah, biar SW juga ke-cache
 ];
 
 
