@@ -10,7 +10,7 @@ self.addEventListener("fetch", e => {
   console.log("Fetching:", e.request.url);
 });
 
-const CACHE_NAME = "pwa-v1";
+const CACHE_NAME = "pwa-v2";
 const urlsToCache = [
   "/AMBW_COBA_DEPLOY/",        // root
   "/AMBW_COBA_DEPLOY/index.html",
